@@ -1,0 +1,23 @@
+{
+  "name": "ms-graph-api-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "backend:build": "tsc --build src/backend/tsconfig.json",
+    "backend:watch": "tsc --build src/backend/tsconfig.json --watch",
+    "backend:start": "node build/backend/index.js",
+    "frontend:build": "tsc --build src/frontend/tsconfig.json",
+    "frontend:watch": "tsc --build src/frontend/tsconfig.json --watch",
+    "frontend:start": "node build/frontend/index.js",
+    "build": "npm run backend:build && npm run frontend:build",
+    "watch": "npm run backend:watch && npm run frontend:watch",
+    "start": "npm run backend:start && npm run frontend:start"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tsc": "^1.20150623.0",
+    "typescript": "^3.9.3"
+  }
+}

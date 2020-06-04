@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "commonjs",
+        "strict": true,
+        "jsx": "preserve",
+        "importHelpers": true,
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "resolveJsonModule": true,
+        "removeComments": true,
+        "sourceMap": true,
+        "outDir": "../../build/frontend/",
+        "baseUrl": ".",
+        "lib": [
+          "esnext",
+          "dom",
+          "dom.iterable",
+          "scripthost"
+        ]
+    },
+    "include": [
+        "**/*.ts",
+        "**/*.tsx",
+        "**/*.vue"
+    ]
+}
